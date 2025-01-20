@@ -1,0 +1,29 @@
+<!-- templates/pdf_to_speech.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF to Speech with Translation</title>
+</head>
+<body>
+    <h1>Upload PDF and Translate to Speech</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="pdf">Select PDF:</label>
+        <input type="file" name="pdf" id="pdf" required><br><br>
+        
+        <label for="language">Select Language:</label>
+        <select name="language" id="language">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="hi">Hindi</option>
+            <option value="ml">malayalam</option>
+
+            <!-- Add more language options -->
+        </select><br><br>
+        
+        <button type="submit">Convert</button>
+    </form>
+</body>
+</html>
