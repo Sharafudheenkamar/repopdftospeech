@@ -1,23 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="{% static 'login.css' %}">
 </head>
 <body>
   <div class="head">
-    <h2>Text-to-Speach</h2>
+    <h2>Text-to-Speech</h2>
 </div>
     <div class="login-page">
         <div class="form">
-          <form class="register-form" action="#">
-            <input type="text" placeholder="name"/>
-            <input type="password" placeholder="password"/>
+          <form class="register-form" action="#" method="post">
+            {% csrf_token %}
+            <input type="text" placeholder="name"name="UserName"/>
+            <input type="password" placeholder="password" name="PassWord"/>
             <input type="text" placeholder="email address"/>
+            <input type="hidden" name="type" value="user">
             <button type="submit">create</button>
-            <p class="message">Already registered? <a href="login.html">Sign In</a></p>
+            <p class="message">Already registered? <a href="/">Sign In</a></p>
           </form>
          
         </div>

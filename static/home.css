@@ -29,7 +29,7 @@ body {
     padding: 3px 5px;
 
   }
-  
+
   .file-upload {
     background-color: #ffffff;
     width: auto;
@@ -37,7 +37,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    height: 500px;
+    height: 300px;
   }
   
   .file-upload-btn {
@@ -86,7 +86,7 @@ body {
     margin-top: 20px;
     border: 4px dashed rgb(39, 87, 129);
     position: relative;
-    height: 435px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +118,7 @@ body {
   }
   
   .file-upload-image {
-    height: 370px;
+    height: 270px;
     width: 500px;
     margin: auto;
     padding: 20px;
